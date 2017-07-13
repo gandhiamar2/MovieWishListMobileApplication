@@ -1,0 +1,187 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gandh.inclass08.editmovie">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:inputType="textPersonName"
+            android:text=""
+            android:ems="10"
+            android:maxLength="50"
+            android:id="@+id/editTextName"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/textViewDescription"
+            android:layout_toEndOf="@+id/textViewDescription" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:maxLength="1000"
+            android:ems="10"
+            android:layout_below="@+id/textViewDescription"
+            android:background="@drawable/box"
+            android:layout_alignLeft="@+id/textViewDescription"
+            android:layout_alignStart="@+id/textViewDescription"
+            android:layout_marginTop="17dp"
+            android:id="@+id/editTextDescription"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:text="@string/genre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/editTextDescription"
+            android:layout_alignRight="@+id/textViewDescription"
+            android:layout_alignEnd="@+id/textViewDescription"
+            android:layout_marginTop="26dp"
+            android:id="@+id/textViewGenre"
+            android:layout_alignLeft="@+id/editTextDescription"
+            android:layout_alignStart="@+id/editTextDescription" />
+
+        <Spinner
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/spinner_values"
+            android:id="@+id/spinner"
+            android:layout_alignTop="@+id/textViewGenre"
+            android:layout_toRightOf="@+id/textViewGenre"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textAlignment="center"/>
+
+        <SeekBar
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:max="5"
+            android:progress="0"
+            android:id="@+id/seekBar"
+            android:layout_alignBottom="@+id/textViewRating"
+            android:layout_alignLeft="@+id/spinner"
+            android:layout_alignStart="@+id/spinner" />
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editTextYear"
+            android:layout_alignBaseline="@+id/textViewYear"
+            android:layout_alignBottom="@+id/textViewYear"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignLeft="@+id/editTextIMDB"
+            android:layout_alignStart="@+id/editTextIMDB" />
+
+        <TextView
+            android:text=""
+            android:layout_width="75dp"
+            android:layout_height="20dp"
+            android:id="@+id/textViewShowRating"
+            android:layout_alignBaseline="@+id/textViewRating"
+            android:layout_alignBottom="@+id/textViewRating"
+            android:layout_toRightOf="@+id/seekBar"
+            android:layout_toEndOf="@+id/seekBar"
+            android:layout_marginLeft="18dp"
+            android:layout_marginStart="18dp" />
+
+        <TextView
+            android:text="@string/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:id="@+id/textViewName"
+            android:layout_alignBaseline="@+id/editTextName"
+            android:layout_alignBottom="@+id/editTextName"
+            android:layout_alignRight="@+id/textViewRating"
+            android:layout_alignEnd="@+id/textViewRating" />
+
+        <TextView
+            android:text="@string/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginTop="14dp"
+            android:id="@+id/textViewDescription"
+            android:layout_below="@+id/editTextName"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="@string/Rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp"
+            android:id="@+id/textViewRating"
+            android:layout_below="@+id/spinner"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="@string/year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginTop="27dp"
+            android:id="@+id/textViewYear"
+            android:layout_below="@+id/textViewShowRating"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:text="Edit Movie"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/Edit"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:text="@string/imdb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:id="@+id/textViewIMBD"
+            android:layout_marginTop="21dp"
+            android:layout_below="@+id/editTextYear"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:inputType="textPersonName"
+            android:text=""
+            android:ems="10"
+            android:id="@+id/editTextIMDB"
+            android:layout_below="@+id/editTextYear"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignLeft="@+id/seekBar"
+            android:layout_alignStart="@+id/seekBar" />
+    </RelativeLayout>
+
+
+</FrameLayout>
+

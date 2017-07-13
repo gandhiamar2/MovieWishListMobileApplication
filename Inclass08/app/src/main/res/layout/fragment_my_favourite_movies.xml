@@ -1,0 +1,64 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gandh.inclass08.MyFavouriteMoviesFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:text="@string/AddMovie"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+
+            android:layout_marginTop="68dp"
+            android:id="@+id/buttonAddMovie"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:text="@string/Year"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:id="@+id/buttonYear"
+            android:layout_below="@+id/buttonDelete"
+            android:layout_alignLeft="@+id/buttonDelete"
+            android:layout_alignStart="@+id/buttonDelete" />
+
+        <Button
+            android:text="@string/ShowRating"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:id="@+id/buttonRating"
+            android:layout_below="@+id/buttonYear"
+            android:layout_alignLeft="@+id/buttonYear"
+            android:layout_alignStart="@+id/buttonYear"
+            android:layout_marginTop="18dp" />
+
+        <Button
+            android:text="@string/EditMovie"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/buttonEdit"
+            android:layout_below="@+id/buttonAddMovie"
+            android:layout_alignLeft="@+id/buttonAddMovie"
+            android:layout_alignStart="@+id/buttonAddMovie" />
+
+        <Button
+            android:text="@string/DeleteMovie"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:id="@+id/buttonDelete"
+            android:layout_below="@+id/buttonEdit"
+            android:layout_alignLeft="@+id/buttonEdit"
+            android:layout_alignStart="@+id/buttonEdit"
+            android:layout_marginTop="15dp" />
+    </RelativeLayout>
+
+
+</FrameLayout>

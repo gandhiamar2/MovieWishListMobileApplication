@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:text="@string/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/textView_head"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="29dp"
+        android:id="@+id/textView_title" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:id="@+id/edittext_des"
+        android:textSize="15dp"
+        android:background="@drawable/box"
+        android:layout_below="@+id/textview_des"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_alignRight="@+id/button_last"
+        android:layout_alignEnd="@+id/button_last"
+        android:layout_alignLeft="@+id/textView_rating"
+        android:layout_alignStart="@+id/textView_rating" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:textSize="15dp"
+        android:id="@+id/edittext_title"
+        android:layout_alignBaseline="@+id/textView_title"
+        android:layout_alignBottom="@+id/textView_title"
+        android:layout_toRightOf="@+id/button_first"
+        android:layout_toEndOf="@+id/button_first" />
+
+    <TextView
+        android:text="@string/string1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="34dp"
+        android:id="@+id/textView_head"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/last"
+        android:id="@+id/button_last"
+        android:background="@drawable/last"
+        android:layout_alignTop="@+id/imageButton_before"
+        android:layout_toRightOf="@+id/button_next"
+        android:layout_toEndOf="@+id/button_next"
+        android:layout_alignBottom="@+id/button_next" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:textSize="15dp"
+        android:layout_alignTop="@+id/textView_genre"
+        android:id="@+id/edittext_genre"
+        android:layout_toRightOf="@+id/button_first"
+        android:layout_alignRight="@+id/edittext_des"
+        android:layout_alignEnd="@+id/edittext_des" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:textSize="15dp"
+        android:layout_alignBottom="@+id/textView_rating"
+        android:layout_alignLeft="@+id/edittext_genre"
+        android:layout_alignStart="@+id/edittext_genre"
+        android:id="@+id/edittext_rating"
+        android:layout_alignRight="@+id/edittext_des"
+        android:layout_alignEnd="@+id/edittext_des" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/before"
+        android:id="@+id/imageButton_before"
+        android:background="@drawable/before"
+        android:layout_toRightOf="@+id/textview_des"
+        android:layout_toEndOf="@+id/textview_des"
+        android:layout_alignBottom="@+id/button_finish" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/mext"
+        android:id="@+id/button_next"
+        android:background="@drawable/mext"
+        android:layout_alignTop="@+id/imageButton_before"
+        android:layout_toRightOf="@+id/button_finish"
+        android:layout_toEndOf="@+id/button_finish" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/first"
+        android:id="@+id/button_first"
+        android:background="@drawable/first"
+        android:layout_alignTop="@+id/imageButton_before"
+        android:layout_toLeftOf="@+id/imageButton_before"
+        android:layout_toStartOf="@+id/imageButton_before"
+        android:layout_alignBottom="@+id/button_next" />
+
+    <TextView
+        android:text="@string/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:id="@+id/textview_des"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/textView_title"
+        android:layout_alignLeft="@+id/textView_title"
+        android:layout_alignStart="@+id/textView_title" />
+
+    <TextView
+        android:text="@string/genre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:id="@+id/textView_genre"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/edittext_des"
+        android:layout_alignRight="@+id/textView_imdb"
+        android:layout_alignEnd="@+id/textView_imdb" />
+
+    <TextView
+        android:text="@string/imdb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:id="@+id/textView_imdb"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/textView_year"
+        android:layout_alignLeft="@+id/textView_year"
+        android:layout_alignStart="@+id/textView_year" />
+
+    <Button
+        android:text="@string/Finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_finish"
+        android:textAllCaps="false"
+        android:layout_marginBottom="22dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="@string/Rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:id="@+id/textView_rating"
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/textView_genre"
+        android:layout_alignLeft="@+id/textview_des"
+        android:layout_alignStart="@+id/textview_des" />
+
+    <TextView
+        android:text="@string/year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:id="@+id/textView_year"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/textView_rating"
+        android:layout_alignRight="@+id/textView_title"
+        android:layout_alignEnd="@+id/textView_title" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:id="@+id/edittext_year"
+        tools:text="@string/test"
+        android:layout_alignTop="@+id/textView_year"
+        android:layout_alignLeft="@+id/edittext_rating"
+        android:layout_alignStart="@+id/edittext_rating" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:textSize="15dp"
+        android:id="@+id/editext_imdb"
+        android:layout_below="@+id/textView_imdb"
+        android:layout_alignLeft="@+id/textView_rating"
+        android:layout_alignStart="@+id/textView_rating"
+        android:layout_marginTop="10dp"
+        android:layout_toStartOf="@+id/button_next"
+        android:layout_alignRight="@+id/button_last"
+        android:layout_alignEnd="@+id/button_last" />
+
+</RelativeLayout>

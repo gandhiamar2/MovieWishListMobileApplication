@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">HW2_Movies</string>
+    <string name="string1">Movies by Year</string>
+    <string name="title">Title:</string>
+    <string name="desc">Description:</string>
+    <string name="genre">Genre:</string>
+    <string name="Rating">Rating:</string>
+    <string name="year">Year:</string>
+    <string name="imdb">IMDB:</string>
+    <string name="Finish">Finish</string>
+    <string name="test" />
+    <string name="name">Name:</string>
+    <string name="AddMovie">Add Movie</string>
+    <string name="EditMovie">Edit Movie</string>
+    <string name="DeleteMovie">Delete Movie</string>
+    <string name="Year">Show list by Year</string>
+    <string name="ShowRating">Show list by Rating</string>
+    <string-array name="spinner_values">
+        <item>Select</item>
+        <item>Action</item>
+        <item>Animation</item>
+        <item>Comedy</item>
+        <item>Documentary</item>
+        <item>Family</item>
+        <item>Horror</item>
+        <item>Crime</item>
+        <item>Others</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
